@@ -1,0 +1,92 @@
+/* General Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+    color: #333;
+    transition: background 0.3s, color 0.3s;
+}
+
+/* Header Styling */
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Hero Section Styling */
+#hero {
+    text-align: center;
+    padding: 2rem;
+}
+
+/* Projects Section Styling */
+#project-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+}
+.project-card {
+    width: 30%;
+    padding: 10px;
+    background: #ddd;
+    text-align: center;
+    border-radius: 8px;
+}
+
+/* Skills Section */
+.skill {
+    margin-bottom: 1rem;
+}
+.progress-bar {
+    width: 100%;
+    background: #ddd;
+    height: 20px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.progress {
+    height: 100%;
+    width: 0;
+    transition: width 1.5s ease;
+}
+.progress.html { background: #f16529; width: 90%; }
+.progress.css { background: #2965f1; width: 80%; }
+.progress.js { background: #f7df1e; width: 70%; }
+
+/* Testimonials Styling */
+#testimonials {
+    text-align: center;
+    padding: 2rem;
+}
+.testimonial {
+    display: none;
+    font-style: italic;
+}
+.testimonial.active {
+    display: block;
+}
+
+/* Contact Form */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+/* Dark Mode */
+body.dark-mode {
+    background-color: #1a1a1a;
+    color: #f4f4f4;
+}
